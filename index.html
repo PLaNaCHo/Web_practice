@@ -1,70 +1,39 @@
-<!--  주석 시작
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <script src="script.js"></script>
-  </body>
-</html>
-주석 끝 -->
-
 <!doctype html>
 <!-- 이 페이지가 html로 만들어졌다-->
 
 <head>
 	<!-- 본문 설명-->
-	<title>페이지 이름</title>
+	<title>페이지 이름(인터넷 탭에 뜨는거)</title>
 	<meta charset="utf-8">
 	<!-- 한글 안깨지게-->
 </head>
+<!--/////////////------head------///////////////////-->
 
-  <a href="box.html">BOX</a>
+<link rel="stylesheet" href="style.css">
+<!-- 외부의 css파일중 이름이 style.css인 것을 가져옴-->
 <body>
 	<!-- 본문 시작-->
-	<h1>제목</h1>
-	그냥 작성하면 그냥 나옴<br>이걸로 줄바꿈
-  안하면 줄 안바뀜<br>이건 좌우로 안감싼다<br>
-  <strong>두껍게</strong><u>밑줄</u>    <br>
-  <p>단락 시작</p>
-  <p style="margin-top:45px;"><!-- css를 추가,45만큼 공백>-->
-  css적용한 공백</p>
-  <img src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/module/3135/7648.png">
-  <!-- 이미지 태그와 source라는 속성을 이용-->
-  <img src="electric.jpg" width="50%">
-  <ul> <!-- unordered list.점으로 구분-->
-    <li> 리스트</li>
-    <li> 리스트2</li>
-  </ul>
-  <ol> <!-- ordered list.자동으로 번호로 구분-->
-    <li> 리스트</li>
-    <li> 리스트2</li>
-  </ol>
-  <p><a
-  href="https://www.w3.org/TR/html5/" target="_blank" title="html5 specification" class="saw">
-  HTML링크</a><br> <!-- <a>는 앵커(정박)으로 링크기능이다
-  herf는 Hypertext REFrence의 약자.
-  target="_blank는 링크를 클릭했을 때 새창에서 열리게 하는 속성,title은 어떤내용을 담고있는지 툴팁으로 보여줌,
-  class="saw"는 이부분을 saw라는 클래스에 담은것-->
-  <a class="saw saw2">HTML같이 클래스 saw로 묶임</a><br><!-- 클래스는 여러개가 되고, 띄어쓰기로 구분한다-->
-  <a>HTML 클래스로 안묶임</a><br>
-  <a class="saw" id="id">HTML id가 있음</a><br>
-  <!-- id태그가 class보다 높은 우선순위적용(=더 구체적)-->
-  <font color="red">font태그를 적용한 색</font>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <h1><a href="index.html">제목</a></h1>
+	<div id="grid">
+		<div class="index_link">
+      <ol>
+				<li><a href="basic.html">기본(basic)</a></li>
+				<li><a href="box.html">BOX</a></li>
+      </ol>
+		</div>
+    <!----------------------------------------->
+		<div class="content">
+			본문내용이다
+    </div>
+  </div>
+</body>
+<!------------------body-------------------------->
+<!------------------css-------------------------------->
+  <br><li style="color:red;text-decoration:underline;">html내에서 css를 사용하게 해주는 속성 style </li>
   <style> /* css주석 */
-  /*<style>은 그 안에서 css를 사용하겠다는 의미으 html태그*/
+  /*<style>은 그 안에서 css를 사용하겠다는 의미의 html태그*/
     #id {
       color:green;
-    }
-    a {color:magenta;
-    /*위 코드는 모든 a태그의 색을 magenta로 바꿈*/
-    text-decoration: none; 
-    /*text-decoration을 none으로 하면 글씨의 장식을 모두 지움. 여기선 링크의 밑줄을 지우는데 사용됨*/
     }
     .saw {/*.saw는 saw라는 이름의 클래스를 선택한다는 뜻
     같은 속성이면 더 뒤에 나온 css가 덮어씀*/
@@ -73,9 +42,8 @@
     .saw2 {
       font-size:10px;
     }
-    h1 {font-size:40px;
-    text-align:center;
+    #grid {
+      display:grid;
+      grid-template-columns: 120px 1fr;
     }
   </style>
-
-  <br><li style="color:red;text-decoration:underline;">html내에서 css를 사용하게 해주는 속성 style </li>

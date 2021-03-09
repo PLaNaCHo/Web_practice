@@ -1,0 +1,21 @@
+    .index_link{
+      border-right:1px solid grey
+    }
+    ol{
+      padding-left:28px;
+    }
+    a {color:magenta;
+    /*위 코드는 모든 a태그의 색을 magenta로 바꿈*/
+    text-decoration: none; 
+    /*text-decoration을 none으로 하면 글씨의 장식을 모두 지움. 여기선 링크의 밑줄을 지우는데 사용됨*/
+    }
+    h1 {
+      font-size:40px;
+      text-align:center;
+      margin:0;
+      padding:15px;
+      border-bottom:1px solid gray;
+      display:block;
+    }.content{
+      padding:15px;
+    }
